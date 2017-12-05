@@ -9,7 +9,7 @@ sys.argv[2] = pickled tokenizer full path
 sys.argv[3] = text to classifiy
 """
 
-class_category = ['UX ANALYST','SYS ANALYST','CONFIGURATION','BIZ ANALYST','DATA ANALYST','SECURITY'];
+class_category = ['POSITIVE','NEGATIVE'];  # Update it w.r.t the training categories used
 
 if len(sys.argv) != 4:
 	print("Parameters missing")
