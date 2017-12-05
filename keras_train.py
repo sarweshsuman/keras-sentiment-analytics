@@ -37,7 +37,7 @@ if __name__ == '__main__':
 	sequences = tokenizer.texts_to_sequences(texts)
 	word_index = tokenizer.word_index
 	vocab_size = len(word_index)
-	glove = Glove('/home/cdpai/tensorflow-models/rateresponses/glove_pretrained_word_embedding/glove.6B.100d.txt',100)
+	glove = Glove('glove.6B.100d.txt',100)
 	glove.create_embedding_matrix(word_index)
 	data=pad_sequences(sequences,maxlen=50)
 	indices = np.arange(data.shape[0])
